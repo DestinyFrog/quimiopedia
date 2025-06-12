@@ -21,7 +21,7 @@ body {
     margin-top: 60px;
     width: 500px;
     height: auto;
-    min-height: 300px;
+    min-height: 500px;
     padding: 8px 0px;
     border-radius: 6px;
     background-color: rgb(255, 187, 99);
@@ -47,20 +47,21 @@ body {
     z-index: 1;
 }
 
-.tag-selected {
-    height: 0px;
-}
-
 .paper {
     font-family: "Bad Script", cursive;
     font-weight: 400;
     font-style: normal;
     background-color: antiquewhite;
+    margin: 6px;
     padding: 10px 20px 30px 20px;
     display: none;
 }
 
-.selected {
+.selected .folder-tag {
+    height: 0px;
+}
+
+.selected .paper {
     display: block;
     z-index: 1;
     margin-top: 0px;

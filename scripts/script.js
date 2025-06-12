@@ -4,14 +4,18 @@ const data_links_elements = document.querySelectorAll('.link-element')
 for ( const data_link_element of data_links_elements ) {
     const value = data_link_element.getAttribute('value')
     const element = elements[value]
-    
+
     if (!element) continue
+
+    const id = "#paper-" + value
     
     const a_link_element = document.createElement('a')
     a_link_element.innerHTML = element.symbol
-    a_link_element.href = "#paper-" + value
+    a_link_element.href = id
     a_link_element.classList.add('small-element')
     a_link_element.classList.add(element.category)
+
+    a_link_element.addEventListener('click', function () { openTab(id) })
 
     data_link_element.appendChild(a_link_element)
 }
@@ -51,8 +55,8 @@ const folders = document.querySelectorAll('.folder')
 for ( const folder of folders ) {
     const papers = folder.querySelectorAll('.paper')
 
-    const folder_front = document.createElement('div')
-    folder.appendChild(folder_front)
+    // const folder_front = document.createElement('div')
+    // folder.appendChild(folder_front)
 
     let i = 0
     for ( const paper of papers ) {
@@ -63,26 +67,31 @@ for ( const folder of folders ) {
         div_menu.classList.add('folder-tag')
         
         const button_menu = document.createElement('button')
-        button_menu.style.marginLeft = (i*20)+'px'
+        button_menu.style.marginLeft = (i*80%400)+'px'
         button_menu.innerHTML = title
         div_menu.appendChild(button_menu)
-        
+
         const my_paper = paper
         paper.remove()
-        folder.appendChild(div_menu)
-        folder.appendChild(my_paper)
+        
+        const div_tab = document.createElement('div')
+        div_tab.appendChild(div_menu)
+        div_tab.appendChild(my_paper)
+        folder.appendChild(div_tab)
+                
+        const paper_id = my_paper.getAttribute('id')
+        my_paper.removeAttribute('id')
+        div_tab.setAttribute('id', paper_id)
+
 
         button_menu.addEventListener('click',
-            function () {
-                my_paper.classList.toggle('selected')
-                div_menu.classList.toggle('tag-selected')
-            })
+            function () { openTab("#"+paper_id) })
 
         i++
     }
 }
 
-function selectPaper() {
-    my_paper.classList.toggle('selected')
-    div_menu.classList.toggle('tag-selected')
+function openTab(id) {
+    const paper = document.querySelector(id)
+    paper.classList.toggle('selected')
 }
