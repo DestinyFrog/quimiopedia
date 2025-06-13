@@ -21,7 +21,7 @@ body {
     margin-top: 60px;
     width: 500px;
     height: auto;
-    min-height: 500px;
+    /* min-height: 500px; */
     padding: 8px 0px;
     border-radius: 6px;
     background-color: rgb(255, 187, 99);
@@ -55,6 +55,7 @@ body {
     margin: 6px;
     padding: 10px 20px 30px 20px;
     display: none;
+    position: relative;
 }
 
 .selected .folder-tag {
@@ -76,6 +77,13 @@ body {
 .paper .title {
     font-family: 'Kaushan Script', cursive;
     font-weight: bold;
+}
+
+.paper-top-right {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    transform: rotate(3deg) translateX(10px) translateY(-10px);
 }
 
 .float-left {
@@ -177,4 +185,9 @@ body {
     text-align: center;
     margin: 10px 0px;
     font-size: 0.8rem;
+}
+
+.flag {
+    height: 40px;
+    border: 2px solid white;
 }
