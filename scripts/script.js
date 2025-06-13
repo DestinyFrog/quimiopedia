@@ -55,9 +55,6 @@ const folders = document.querySelectorAll('.folder')
 for ( const folder of folders ) {
     const papers = folder.querySelectorAll('.paper')
 
-    // const folder_front = document.createElement('div')
-    // folder.appendChild(folder_front)
-
     let i = 0
     for ( const paper of papers ) {
         const el_title = paper.querySelector('.title')
@@ -89,6 +86,10 @@ for ( const folder of folders ) {
 
         i++
     }
+
+    const folder_front = document.createElement('div')
+    folder_front.className = 'folder-front'
+    folder.appendChild(folder_front)
 }
 
 function openTab(id) {

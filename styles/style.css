@@ -47,6 +47,10 @@ body {
     z-index: 1;
 }
 
+.folder-front {
+    height: 200px;
+}
+
 .paper {
     font-family: "Bad Script", cursive;
     font-weight: 400;
@@ -190,4 +194,8 @@ body {
 .flag {
     height: 40px;
     border: 2px solid white;
+}
+
+.element-list {
+    display: flex;
 }
