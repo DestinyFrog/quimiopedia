@@ -108,3 +108,5 @@ function openTab(id) {
     }
 
 }
+
+openTab("#paper-dioxido-de-carbono")
