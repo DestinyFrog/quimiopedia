@@ -124,8 +124,6 @@ function estequiometria_dioxido_de_carbono() {
     const dioxido_de_carbono = value_metano * 1
     const agua = value_metano * 2
 
-    console.log(value_metano, gas_oxigenio, dioxido_de_carbono, agua)
-
     input_gas_oxigenio.setAttribute('value', gas_oxigenio)
     input_dioxido_de_carbono.setAttribute('value', dioxido_de_carbono)
     input_agua.setAttribute('value', agua)
