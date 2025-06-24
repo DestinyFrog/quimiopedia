@@ -1,0 +1,69 @@
+<svg width="92" height="55" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .svg-element {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            fill: black;
+            font-weight: bold;
+            dominant-baseline: middle;
+            text-anchor: middle;
+        }
+
+        .svg-element-charge-border {
+            stroke: black;
+            stroke-width: 0.3px;
+            fill: white;
+            r: 2.5px;
+        }
+
+        .svg-element-charge {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 3px;
+            fill: black;
+            dominant-baseline: central;
+            text-anchor: middle;
+        }
+
+        .svg-ligation {
+            stroke-width: 1px;
+            stroke: black;
+        }
+
+        .svg-element-H {
+            fill: #727272;
+        }
+
+        .svg-element-S {
+            fill: #f7cd29;
+        }
+
+        .svg-element-Na {
+            fill: #f7d653;
+        }
+
+        .svg-element-Cl {
+            fill: #21d122;
+        }
+
+        .svg-element-F {
+            fill: #aed482;
+        }
+
+        .svg-element-N {
+            fill: #7878fa;
+        }
+
+        .svg-element-O {
+            fill: #eb3738;
+        }
+
+        .svg-element-C {
+            fill: #000000;
+        }
+    </style><text class="svg-element svg-element-O" x="45.9808" y="20">O</text>
+    <circle class="svg-element-charge-border" cx="53.9808" cy="12" /><text class="svg-element-charge" x="53.9808"
+        y="12">-</text><text class="svg-element svg-element-Na" x="71.9615" y="35">Na</text>
+    <circle class="svg-element-charge-border" cx="79.9615" cy="27" /><text class="svg-element-charge" x="79.9615"
+        y="27">+</text><text class="svg-element svg-element-H" x="20" y="35">H</text>
+    <line class="svg-ligation" x1="39.0526" y1="24" x2="26.9282" y2="31"></line>
+</svg>

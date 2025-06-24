@@ -335,7 +335,8 @@ input {
 
 .note {
     padding: 10px;
-    background-color: ;
+    background-color: antiquewhite;
+    width: 120%;
 }
 
 @media (min-width: 768px) {
