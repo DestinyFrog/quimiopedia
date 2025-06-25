@@ -107,31 +107,3 @@ function openTab(id) {
     }
 
 }
-
-openTab("#paper-acido-base")
-
-const input_metano = document.querySelector('#input-metano')
-const input_gas_oxigenio = document.querySelector('#input-gas-oxigenio')
-const input_dioxido_de_carbono = document.querySelector('#input-dioxido-de-carbono')
-const input_agua = document.querySelector('#input-agua')
-
-input_metano.addEventListener('input', estequiometria_dioxido_de_carbono)
-
-function estequiometria_dioxido_de_carbono() {
-    const value_metano = input_metano.getAttribute('value')
-
-    const gas_oxigenio = value_metano * 3
-    const dioxido_de_carbono = value_metano * 1
-    const agua = value_metano * 2
-
-    input_gas_oxigenio.setAttribute('value', gas_oxigenio)
-    input_dioxido_de_carbono.setAttribute('value', dioxido_de_carbono)
-    input_agua.setAttribute('value', agua)
-}
-
-const input_soda_caustica = document.querySelector('#input-soda-caustica')
-input_soda_caustica.addEventListener('input', estequiometria_neutralizacao)
-
-function estequiometria_neutralizacao() {
-    const value_soda_caustica = input_soda_caustica.getAttribute('value')
-}
