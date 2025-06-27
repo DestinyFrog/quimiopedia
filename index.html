@@ -5,329 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>quimiopedia</title>
+    <title>Quimiopedia</title>
 
     <link rel="stylesheet" href="./styles/categories.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/folder.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/element.css">
 
-    <script src="./scripts/elements.js"></script>
-    <script src="./scripts/script.js" defer></script>
-    <script src="./scripts/estequiometria.js"></script>
+    <script src="./scripts/data_elements.js"></script>
+    <script src="./scripts/element.js" defer></script>
+    <script src="./scripts/estequiometria.js" defer></script>
+    <script src="./scripts/folder.js" defer></script>
 </head>
 
 <body>
-    <div class="folder" id="folder-category">
-        <div class="paper" id="paper-gas-nobre">
-            <data value="Categorias" class="folder-data"></data>
-            <h2 class="title">Gás Nobre</h2>
-            <p>
-                Os gases nobres são elementos químicos da família 18 da tabela periódica, conhecidos por sua baixa
-                reatividade devido à camada de elétrons completa.
-                <br />
-                Incluem hélio, neônio, argônio, criptônio, xenônio e radônio, sendo estáveis e pouco propensos a formar
-                compostos.
-                <br />
-                São utilizados em aplicações como iluminação, soldagem e pesquisas científicas devido às suas
-                propriedades inertes.
-                <br />
-            <h2>Exemplos:</h2>
-            <data class="link-element" value="helio"></data>
-            </p>
-        </div>
-        <div class="paper" id="paper-metal-alcalino">
-            <h2 class="title">Metal Alcalino</h2>
-            <p> Os metais alcalinos pertencem à família 1 da tabela periódica e são conhecidos por sua alta reatividade,
-                especialmente com a água, formando hidróxidos e liberando hidrogênio. <br /> São metais macios, de baixa
-                densidade e pontos de fusão baixos, sendo armazenados sob óleo para evitar reações com o ar. <br />
-                Utilizados em baterias, produção de sabão e em reações químicas industriais. <br />
-            <h2>Exemplos:</h2>
-            <div class="element-list">
-                <data class="link-element" value="litio"></data>
-                <data class="link-element" value="sodio"></data>
-                <data class="link-element" value="potassio"></data>
-            </div>
-            </p>
-        </div>
-        <div class="paper" id="paper-metal-alcalino-terroso">
-            <h2 class="title">Metal Alcalino-Terroso</h2>
-            <p> Os metais alcalino-terrosos são elementos da família 2 da tabela periódica, menos reativos que os
-                alcalinos, mas ainda assim reagem facilmente com água e oxigênio. <br /> São mais duros e densos que os
-                metais alcalinos, com pontos de fusão mais elevados. <br /> São usados em ligas metálicas, fogos de
-                artifício e na produção de cimento. <br />
-            <h2>Exemplos:</h2>
-            <data class="link-element" value="magnesio"></data>
-            </p>
-        </div>
-        <div class="paper" id="paper-metal-transicao">
-            <h2 class="title">Metal de Transição</h2>
-            <p> Os metais de transição ocupam o bloco central da tabela periódica (famílias 3 a 12) e são conhecidos por
-                apresentarem múltiplos estados de oxidação e formarem compostos coloridos. <br /> Possuem boa
-                condutividade elétrica e térmica, além de serem maleáveis e dúcteis. <br /> São fundamentais na
-                indústria, usados em catalisadores, moedas e ligas metálicas. <br />
-            <h2>Exemplos:</h2>
+    <header>
+        <h1>Quimiopedia</h1>
 
-            <div class="element-list">
-                <data class="link-element" value="ferro"></data>
-                <data class="link-element" value="cobre"></data>
-                <data class="link-element" value="niquel"></data>
-                <data class="link-element" value="ouro"></data>
-            </div>
-            </p>
-        </div>
-        <div class="paper" id="paper-semimetal">
-            <h2 class="title">Semimetal</h2>
-            <p> Os semimetais apresentam propriedades intermediárias entre metais e ametais, podendo conduzir
-                eletricidade em determinadas condições. <br /> São usados principalmente em dispositivos eletrônicos,
-                como transistores e diodos, devido ao seu comportamento semicondutor. <br /> Geralmente são frágeis e
-                possuem brilho metálico. <br />
-            <h2>Exemplos:</h2>
-            <data class="link-element" value="arsenio"></data>
-            </p>
-        </div>
-        <div class="paper" id="paper-ametal">
-            <h2 class="title">Ametal</h2>
-            <p> Os ametais são elementos que geralmente não conduzem eletricidade nem calor, apresentam baixa densidade
-                e não possuem brilho metálico. <br /> Podem estar presentes nos estados sólido, líquido ou gasoso à
-                temperatura ambiente. <br /> São essenciais para a vida e para diversos processos industriais. <br />
-            <h2>Exemplos:</h2>
-            <data class="link-element" value="carbono"></data>
-            <data class="link-element" value="oxigenio"></data>
-            <data class="link-element" value="enxofre"></data>
-            </p>
-        </div>
-    </div>
+        <nav>
+            <a href="#folder-elements">Elementos</a>
+            <a href="#folder-chemicals">Químicos Importantes</a>
+            <a href="#folder-moleculas">Móleculas</a>
+            <a href="#folder-reacoes">Reações Químicas</a>
+        </nav>
+    </header>
 
-    <div class="folder" id="folder-element">
+    <div class="folder" id="folder-elements">
         <data value="Elementos" class="folder-data"></data>
-        <div class="paper" id="paper-hidrogenio">
-            <h2 class="title">Hidrogênio</h2>
-            <p>
-                O hidrogênio é o elemento mais simples e abundante do universo, composto por apenas um próton e um
-                elétron.
-                <data class="element float-right" value="hidrogenio"></data>
-                <br />
-                Ele é incolor, inodoro e altamente inflamável, sendo essencial em processos químicos e
-                energéticos, como a formação da água e a produção de energia limpa. Além disso, possui potencial como
-                fonte de combustível sustentável devido à sua capacidade de gerar energia sem emitir poluentes.
-            </p>
-        </div>
-        <div class="paper" id="paper-helio">
-            <h2 class="title">Hélio</h2>
-            <p>
-                O hélio é um gás nobre incolor, inodoro e não inflamável, sendo o segundo elemento mais abundante no
-                universo.
-                <data class="element float-right" value="helio"></data>
-                <br />
-                É conhecido por sua baixa densidade e por ser usado em balões e dirigíveis, além de aplicações
-                criogênicas e na ressonância magnética.
-                Por ser quimicamente inerte, não forma compostos facilmente, tornando-o seguro para diversas aplicações
-                científicas e industriais.
-            </p>
-        </div>
-        <div class="paper" id="paper-litio">
-            <h2 class="title">Lítio</h2>
-            <p>
-                O lítio é um metal alcalino leve e macio, sendo o elemento sólido mais leve da tabela periódica.
-                <data class="element float-right" value="litio"></data>
-                <br />
-                Amplamente utilizado em baterias recarregáveis, ele revolucionou a tecnologia de dispositivos
-                eletrônicos e veículos elétricos.
-                Também tem aplicações na psiquiatria, como estabilizador de humor, e na produção de ligas metálicas
-                resistentes.
-            </p>
-        </div>
-        <div class="paper" id="paper-carbono">
-            <h2 class="title">Carbono</h2>
-            <p>
-                O carbono é a base da vida na Terra, presente em todas as moléculas orgânicas e com uma incrível
-                capacidade de formar diversas estruturas.
-                <data class="element float-right" value="carbono"></data>
-                <br />
-                Existe em várias formas alotrópicas, como grafite, diamante e grafeno, cada uma com propriedades únicas.
-                Sua versatilidade o torna essencial na indústria, na tecnologia e até mesmo na medicina.
-            </p>
-        </div>
-        <div class="paper" id="paper-nitrogenio">
-            <h2 class="title">Nitrogênio</h2>
-            <p>
-                O nitrogênio é um gás inerte que compõe cerca de 78% da atmosfera terrestre, sendo essencial para a
-                vida.
-                <data class="element float-right" value="nitrogenio"></data>
-                <br />
-                É um componente fundamental de proteínas e DNA, além de ser usado na produção de fertilizantes e na
-                conservação de alimentos.
-                Na forma líquida, é utilizado em criogenia e em procedimentos médicos e industriais.
-            </p>
-        </div>
-        <div class="paper" id="paper-oxigenio">
-            <h2 class="title">Oxigênio</h2>
-            <p>
-                O oxigênio é um elemento vital para a respiração dos seres vivos e um dos mais abundantes na Terra.
-                <data class="element float-right" value="oxigenio"></data>
-                <br />
-                Presente na água e no ar, é essencial para a combustão e para processos biológicos, como a produção de
-                energia celular.
-                Também é utilizado na medicina, na indústria e até mesmo em sistemas de suporte à vida no espaço.
-            </p>
-        </div>
-        <div class="paper" id="paper-fluor">
-            <h2 class="title">Flúor</h2>
-            <p>
-                O flúor é o elemento mais eletronegativo da tabela periódica, altamente reativo e encontrado
-                principalmente em minerais.
-                <data class="element float-right" value="fluor"></data>
-                <br />
-                É amplamente utilizado na odontologia, na forma de fluoreto, para fortalecer os dentes e prevenir
-                cáries.
-                Também é essencial na produção de plásticos, como o Teflon, e em processos industriais, como o
-                enriquecimento de urânio.
-            </p>
-        </div>
-        <div class="paper" id="paper-sodio">
-            <h2 class="title">Sódio</h2>
-            <p>
-                O sódio é um metal alcalino altamente reativo, conhecido por seu papel fundamental na biologia e na
-                indústria.
-                <data class="element float-right" value="sodio"></data>
-                <br />
-                Presente no sal de cozinha (cloreto de sódio), é essencial para o funcionamento dos nervos e músculos.
-                Também é usado em lâmpadas de vapor de sódio, na produção de sabões e em processos químicos industriais.
-            </p>
-        </div>
-        <div class="paper" id="paper-magnesio">
-            <h2 class="title">Magnésio</h2>
-            <p>
-                O magnésio é um metal leve e resistente, essencial para a vida e amplamente utilizado em ligas
-                metálicas.
-                <data class="element float-right" value="magnesio"></data>
-                <br />
-                Desempenha um papel crucial na fotossíntese e na saúde humana, sendo importante para ossos e músculos.
-                Na indústria, é usado em fogos de artifício, automóveis leves e até mesmo em laptops e smartphones.
-            </p>
-        </div>
-        <div class="paper" id="paper-aluminio">
-            <h2 class="title">Alumínio</h2>
-            <p>
-                O alumínio é um metal leve, resistente à corrosão e amplamente utilizado em embalagens, construção e
-                transporte.
-                <data class="element float-right" value="aluminio"></data>
-                <br />
-                Sua reciclabilidade o torna um material sustentável, presente em latas, aviões e estruturas
-                arquitetônicas.
-                Também é usado em cabos elétricos e na produção de espelhos telescópicos devido ao seu alto poder
-                reflexivo.
-            </p>
-        </div>
-        <div class="paper" id="paper-fosforo">
-            <h2 class="title">Fósforo</h2>
-            <p>
-                O fósforo é um elemento essencial para a vida, presente no DNA, no ATP e em fertilizantes agrícolas.
-                <data class="element float-right" value="fosforo"></data>
-                <br />
-                Existe em formas alotrópicas, como o fósforo branco (altamente reativo) e o fósforo vermelho (usado em
-                fósforos de segurança).
-                Sua escassez em alguns ecossistemas pode limitar o crescimento de plantas, tornando-o crucial para a
-                agricultura.
-            </p>
-        </div>
-        <div class="paper" id="paper-enxofre">
-            <h2 class="title">Enxofre</h2>
-            <p>
-                O enxofre é um elemento amarelo e brilhante, essencial para a produção de aminoácidos e vitaminas.
-                <data class="element float-right" value="enxofre"></data>
-                <br />
-                Usado na fabricação de pneus, ácido sulfúrico e fertilizantes, também é encontrado em fontes termais e
-                vulcões.
-                Seus compostos têm odor característico, como o cheiro de ovo podre (sulfeto de hidrogênio).
-            </p>
-        </div>
-        <div class="paper" id="paper-cloro">
-            <h2 class="title">Cloro</h2>
-            <p>
-                O cloro é um gás amarelo-esverdeado altamente reativo, essencial para o tratamento de água e
-                desinfecção.
-                <data class="element float-right" value="cloro"></data>
-                <br />
-                Presente no sal marinho (cloreto de sódio), é usado na produção de plásticos, como o PVC, e em produtos
-                de limpeza.
-                Embora tóxico em sua forma pura, seus compostos são vitais para a saúde pública e a indústria química.
-            </p>
-        </div>
-        <div class="paper" id="paper-ferro">
-            <h2 class="title">Ferro</h2>
-            <p>
-                O ferro é um metal fundamental para a civilização, usado em construções, ferramentas e na produção de
-                aço.
-                <data class="element float-right" value="ferro"></data>
-                <br />
-                É essencial para a vida, sendo um componente central da hemoglobina, que transporta oxigênio no sangue.
-                Sua abundância na crosta terrestre e suas propriedades magnéticas o tornam indispensável na tecnologia
-                moderna.
-            </p>
-        </div>
-        <div class="paper" id="paper-niquel">
-            <h2 class="title">Níquel</h2>
-            <p>
-                O níquel é um metal resistente à corrosão, amplamente utilizado em ligas metálicas, como o aço
-                inoxidável.
-                <data class="element float-right" value="niquel"></data>
-                <br />
-                Presente em baterias recarregáveis (níquel-cádmio e níquel-metal hidreto), também é usado em moedas e
-                revestimentos.
-                Sua capacidade de resistir a altas temperaturas o torna valioso na indústria aeroespacial.
-            </p>
-        </div>
-        <div class="paper" id="paper-cobre">
-            <h2 class="title">Cobre</h2>
-            <p>
-                O cobre é um metal altamente condutor, essencial para a eletrônica, fiação elétrica e sistemas de
-                telecomunicação.
-                <data class="element float-right" value="cobre"></data>
-                <br />
-                Foi um dos primeiros metais utilizados pelo homem, presente em moedas, instrumentos musicais e obras de
-                arte.
-                Suas propriedades antibacterianas também o tornam útil em superfícies hospitalares e sistemas de água
-                potável.
-            </p>
-        </div>
-        <div class="paper" id="paper-ouro">
-            <h2 class="title">Ouro</h2>
-            <p>
-                O ouro é um metal precioso, resistente à corrosão e altamente valorizado em joias, eletrônicos e
-                investimentos.
-                <data class="element float-right" value="ouro"></data>
-                <br />
-                Sua excelente condutividade elétrica o torna essencial em componentes eletrônicos de alta precisão.
-                Além de seu uso monetário ao longo da história, é aplicado na medicina, como em tratamentos de artrite
-                reumatoide.
-            </p>
-        </div>
-        <div class="paper" id="paper-uranio">
-            <h2 class="title">Urânio</h2>
-            <p>
-                O urânio é um elemento radioativo usado como combustível em usinas nucleares e na produção de armas
-                atômicas.
-                <data class="element float-right" value="uranio"></data>
-                <br />
-                Seu isótopo U-235 é fissionável, liberando grandes quantidades de energia, enquanto o U-238 é mais
-                estável.
-                Apesar de sua controvérsia, a energia nuclear baseada em urânio é uma fonte significativa de
-                eletricidade em muitos países.
-            </p>
-        </div>
-        <div class="paper" id="paper-arsenio">
-            <h2 class="title">Arsênio</h2>
-            <p>
-                O arsênio é um elemento tóxico, conhecido por seu uso histórico em venenos e sua presença natural em
-                águas subterrâneas.
-                <data class="element float-right" value="arsenio"></data>
-                <br />
-                Embora seja um veneno potente, tem aplicações na indústria eletrônica (como em semicondutores) e na
-                medicina (tratamento de certas leucemias).
-                A contaminação por arsênio em água potável é um grave problema de saúde pública em várias regiões do
-                mundo.
-            </p>
-        </div>
     </div>
 
     <div class="folder" id="folder-chemicals">
@@ -342,38 +47,42 @@
                 <data value="enxofre" class="link-element"></data>
             </div>
 
-            <p>
             <figure class="polaroid float-left">
                 <img src="./images/antoine_lavoisier.jpg" alt="Retrato de Antoine Lavoisier">
                 <figcaption>Gravura de<br />Antoine Lavoisier</figcaption>
             </figure>
-            Antoine Lavoisier foi um químico francês do século XVIII, conhecido como o "pai da química moderna".
-            <br />
-            Ele estabeleceu a Lei da Conservação das Massas, identificou o oxigênio e o hidrogênio, e ajudou a
-            reformular a nomenclatura química.
-            <br />
-            Suas contribuições foram fundamentais para a revolução científica, embora sua carreira tenha sido
-            interrompida durante a Revolução Francesa, quando foi executado.
+
+            <p class="description">
+                Foi um químico francês do século XVIII, conhecido como o "pai da química moderna".
+                <br />
+                Ele estabeleceu a Lei da Conservação das Massas, identificou o oxigênio e o hidrogênio, e ajudou a
+                reformular a nomenclatura química.
+                <br />
+                Suas contribuições foram fundamentais para a revolução científica, embora sua carreira tenha sido
+                interrompida durante a Revolução Francesa, quando foi executado.
             </p>
         </div>
         <div class="paper" id="paper-dmitri-mendeleev">
             <h2 class="title">Dmitri Mendeleev</h2>
             <p lang="ru">Дми́трий Менделе́ев</p>
             <img class="flag paper-top-right" src="./images/flag/russian_empire.svg" alt="Bandeira da Rússia" />
-            <p>
             <figure class="polaroid float-left">
                 <img src="./images/dmitri_mendeleev.jpg" alt="Retrato de Dmitri Mendeleev">
                 <figcaption>Fotografia de<br />Dmitri Mendeleev</figcaption>
             </figure>
-            Dmitri Mendeleev foi um químico russo do século XIX, famoso por desenvolver a Tabela Periódica dos
-            Elementos.
-            <br />
-            Ele organizou os elementos químicos em ordem crescente de massa atômica, prevendo as propriedades de
-            elementos ainda não descobertos.
-            <br />
-            Sua tabela periódica tornou-se um marco na química e continua sendo essencial para o estudo dos elementos.
+
+            <p class="description">
+                Foi um químico russo do século XIX, famoso por desenvolver a Tabela Periódica dos
+                Elementos.
+                <br />
+                Ele organizou os elementos químicos em ordem crescente de massa atômica, prevendo as propriedades de
+                elementos ainda não descobertos.
+                <br />
+                Sua tabela periódica tornou-se um marco na química e continua sendo essencial para o estudo dos
+                elementos.
             </p>
         </div>
+
         <div class="paper" id="paper-friedrich-kekule">
             <img class="flag paper-top-right" src="./images/flag/german_empire.svg" alt="Bandeira do Império Alemão" />
             <h2 class="title">Friedrich Kekulé</h2>
@@ -391,40 +100,46 @@
             Suas ideias foram fundamentais para o desenvolvimento da teoria estrutural dos compostos orgânicos.
             </p>
         </div>
+
         <div class="paper" id="paper-michael-faraday">
             <h2 class="title">Michael Faraday</h2>
             <img class="flag paper-top-right" src="./images/flag/united_kingdom.svg" alt="Bandeira da Grã-Bretanha" />
-            <p>
             <figure class="polaroid float-left">
                 <img src="./images/michael_faraday.jpg" alt="fotografia de Michael Faraday">
                 <figcaption>Fotografia de<br />Michael Faraday</figcaption>
             </figure>
-            Michael Faraday foi um renomado cientista britânico do século XIX, considerado um dos maiores
-            experimentalistas da história da física e química.
-            <br />
-            Ele fez descobertas fundamentais no eletromagnetismo, como a indução eletromagnética e as leis da
-            eletrólise, revolucionando a ciência e a tecnologia.
-            <br />
-            Além de suas contribuições científicas, era conhecido por suas habilidades didáticas e por popularizar a
-            ciência por meio de conferências públicas.
+
+            <p class="description">
+                Michael Faraday foi um renomado cientista britânico do século XIX, considerado um dos maiores
+                experimentalistas da história da física e química.
+                <br />
+                Ele fez descobertas fundamentais no eletromagnetismo, como a indução eletromagnética e as leis da
+                eletrólise, revolucionando a ciência e a tecnologia.
+                <br />
+                Além de suas contribuições científicas, era conhecido por suas habilidades didáticas e por popularizar a
+                ciência por meio de conferências públicas.
             </p>
         </div>
         <div class="paper" id="paper-humphry-davy">
             <h2 class="title">Humphry Davy</h2>
             <img class="flag paper-top-right" src="./images/flag/united_kingdom.svg" alt="Bandeira da Grã-Bretanha" />
-            <p>
             <figure class="polaroid float-left">
                 <img src="./images/humphry_davy.jpg" alt="Retrato de Humphry Davy">
                 <figcaption>Retrato de<br />Humphry Davy</figcaption>
             </figure>
-            Humphry Davy foi um importante químico britânico do final do século XVIII e início do XIX, pioneiro no campo
-            da eletroquímica.
-            <br />
-            Ele ficou famoso por suas descobertas de vários elementos químicos, incluindo o sódio, potássio, cálcio e
-            magnésio, através da eletrólise.
-            <br />
-            Davy também inventou a lâmpada de segurança para mineiros (lâmpada de Davy) e foi mentor de Michael Faraday,
-            além de ser um popular conferencista na Royal Institution.
+
+            <p class="description">
+                Humphry Davy foi um importante químico britânico do final do século XVIII e início do XIX, pioneiro no
+                campo
+                da eletroquímica.
+                <br />
+                Ele ficou famoso por suas descobertas de vários elementos químicos, incluindo o sódio, potássio, cálcio
+                e
+                magnésio, através da eletrólise.
+                <br />
+                Davy também inventou a lâmpada de segurança para mineiros (lâmpada de Davy) e foi mentor de Michael
+                Faraday,
+                além de ser um popular conferencista na Royal Institution.
             </p>
             <div class="element-list">
                 <data value="sodio" class="element-list"></data>
@@ -434,19 +149,22 @@
         <div class="paper" id="paper-jons-jacob-berzelius">
             <h2 class="title">Jacob Berzelius</h2>
             <img class="flag paper-top-right" src="./images/flag/sweden.svg" alt="Bandeira da Suécia" />
-            <p>
+
             <figure class="polaroid float-left">
                 <img src="./images/jons_jacob_berzelius.png" alt="Retrato de Jöns Jacob Berzelius">
                 <figcaption>Retrato de<br />Jöns Jacob Berzelius</figcaption>
             </figure>
-            Jöns Jacob Berzelius foi um renomado químico sueco do século XIX, considerado um dos fundadores da química
-            moderna.
-            <br />
-            Ele desenvolveu a notação química moderna, introduzindo os símbolos dos elementos (como H, O, C) e os
-            conceitos de fórmulas químicas, além de descobrir novos elementos como o silício, selênio e tório.
-            <br />
-            Berzelius também foi pioneiro no estudo da eletroquímica, cunhou os termos "catálise" e "proteína", e
-            estabeleceu a teoria do dualismo eletroquímico, influenciando gerações de cientistas.
+
+            <p class="description">
+                Jöns Jacob Berzelius foi um renomado químico sueco do século XIX, considerado um dos fundadores da
+                química
+                moderna.
+                <br />
+                Ele desenvolveu a notação química moderna, introduzindo os símbolos dos elementos (como H, O, C) e os
+                conceitos de fórmulas químicas, além de descobrir novos elementos como o silício, selênio e tório.
+                <br />
+                Berzelius também foi pioneiro no estudo da eletroquímica, cunhou os termos "catálise" e "proteína", e
+                estabeleceu a teoria do dualismo eletroquímico, influenciando gerações de cientistas.
             </p>
 
             <div class="element-list">
@@ -461,8 +179,12 @@
             <p>
             <h2 class="title">Dióxido de Carbono</h2>
             <h3>CO<sub>2</sub></h3>
-            Composto químico gasoso, incolor e inodoro, formado por um átomo de carbono (C) ligado a dois átomos de
-            oxigênio (O). É uma molécula linear e apolar, essencial para diversos processos naturais e industriais.
+
+            <p class="description">
+                Composto químico gasoso, incolor e inodoro, formado por um átomo de carbono (C) ligado a dois átomos de
+                oxigênio (O). É uma molécula linear e apolar, essencial para diversos processos naturais e industriais.
+            </p>
+
             <figure class="center">
                 <img width="50%" src="./images/moleculas/dioxido_de_carbono.svg"
                     alt="representação da molécula de dióxido de carbono">
@@ -476,16 +198,157 @@
             </p>
         </div>
 
-        <div class="paper" id="paper-cloreto-de-sodio">
+        <div class="paper" id="paper-agua">
             <p>
-            <h2 class="title">Cloreto de Sódio</h2>
-            <h3>NaCl</h3>
+            <h2 class="title">Água</h2>
+            <h3>H₂O</h3>
+
+            <p class="description">
+                Composto químico inorgânico, conhecido como sal de cozinha, formado por um átomo de sódio (Na) e um
+                átomo de cloro (Cl).
+                <br />
+                É um sal inorgânico, essencial para a vida e para a indústria, sendo utilizado em diversos produtos,
+                como alimentos, produtos de limpeza e na produção de cloro e soda.
+                <br />
+                É um composto iônico, formado por um cátion sódio (Na+) e um ânion cloreto (Cl-), sendo solúvel em água
+                e insolúvel em solventes orgânicos.
+            </p>
 
             <figure class="center">
-                <img width="50%" src="./images/moleculas/dioxido_de_carbono.svg"
-                    alt="representação da molécula de dióxido de carbono">
-                <figcaption>Cloreto de Sódio</figcaption>
+                <img width="50%" src="./images/moleculas/agua.svg" alt="representação da molécula de água">
+                <figcaption>Água</figcaption>
             </figure>
+
+            <div class="element-list">
+                <data class="link-element" value="hidrogenio"></data>
+                <data class="link-element" value="oxigenio"></data>
+            </div>
+
+            </p>
+        </div>
+
+        <div class="paper" id="paper-soda-caustica">
+            <p>
+            <h2 class="title">Soda Caústica</h2>
+            <h3>NaOH</h3>
+
+            <p class="description">
+                Composto químico inorgânico, conhecido como soda caústica, formado por um átomo de sódio (Na) e um átomo
+                de hidróxido (OH).
+                <br />
+                É um composto iônico, formado por um cátion sódio (Na+) e um ânion hidróxido (OH-), sendo solúvel em
+                água e insolúvel em solventes orgânicos.
+            </p>
+
+            <figure class="center">
+                <img width="50%" src="./images/moleculas/soda_caustica.svg"
+                    alt="representação da molécula de soda caústica">
+                <figcaption>Soda Caústica</figcaption>
+            </figure>
+
+            <div class="element-list">
+                <data class="link-element" value="sodio"></data>
+                <data class="link-element" value="hidrogenio"></data>
+                <data class="link-element" value="oxigenio"></data>
+            </div>
+            </p>
+        </div>
+
+        <div class="paper" id="paper-acido-sulfurico">
+            <p>
+            <h2 class="title">Ácido Sulfúrico</h2>
+            <h3>H₂SO₄</h3>
+
+            <p class="description">
+                Composto químico inorgânico, conhecido como ácido sulfúrico, formado por um átomo de hidrogênio (H), um
+                átomo de enxofre (S) e quatro átomos de oxigênio (O).
+                <br />
+                É um composto iônico, formado por um cátion hidrogênio (H+) e um ânion sulfato (SO₄²-), sendo solúvel em
+                água e insolúvel em solventes orgânicos.
+            </p>
+
+            <figure class="center">
+                <img width="50%" src="./images/moleculas/acido_sulfurico.svg"
+                    alt="representação da molécula de ácido sulfuríco">
+                <figcaption>Ácido Sulfúrico</figcaption>
+            </figure>
+
+            <div class="element-list">
+                <data class="link-element" value="hidrogenio"></data>
+                <data class="link-element" value="enxofre"></data>
+                <data class="link-element" value="oxigenio"></data>
+            </div>
+            </p>
+        </div>
+
+        <div class="paper" id="paper-gas-oxigenio">
+            <p>
+            <h2 class="title">Gás Oxigênio</h2>
+            <h3>O₂</h3>
+
+            <p class="description">
+                Composto químico gasoso, incolor e inodoro, formado por dois átomos de oxigênio (O). É uma molécula
+                diatômica e apolar, essencial para a respiração e para a combustão.
+            </p>
+
+            <figure class="center">
+                <img width="50%" src="./images/moleculas/gas_oxigenio.svg" alt="representação do gás oxigênio">
+                <figcaption>Gás Oxigênio</figcaption>
+            </figure>
+
+            <div class="element-list">
+                <data class="link-element" value="oxigenio"></data>
+            </div>
+            </p>
+        </div>
+
+        <div class="paper" id="paper-metano">
+            <p>
+            <h2 class="title">Metano</h2>
+            <h3>CH₄</h3>
+
+            <p class="description">
+                Composto químico inorgânico, conhecido como metano, formado por um átomo de carbono (C) e quatro átomos
+                de hidrogênio (H).
+                <br />
+                É um composto iônico, formado por um cátion carbono (C⁴+) e quatro ânions hidrogênio (H⁻), sendo solúvel
+                em água e insolúvel em solventes orgânicos.
+            </p>
+
+            <figure class="center">
+                <img width="50%" src="./images/moleculas/metano.svg" alt="representação do metano">
+                <figcaption>Metano</figcaption>
+            </figure>
+
+            <div class="element-list">
+                <data class="link-element" value="carbono"></data>
+                <data class="link-element" value="hidrogenio"></data>
+            </div>
+            </p>
+        </div>
+
+        <div class="paper" id="paper-benzeno">
+            <p>
+            <h2 class="title">Benzeno</h2>
+            <h3>C₆H₆</h3>
+
+            <p class="description">
+                Composto químico inorgânico, conhecido como benzeno, formado por seis átomos de carbono (C) e seis
+                átomos de hidrogênio (H).
+                <br />
+                É um composto iônico, formado por seis cátions carbono (C⁴+) e seis ânions hidrogênio (H⁻), sendo
+                solúvel em água e insolúvel em solventes orgânicos.
+            </p>
+
+            <figure class="center">
+                <img width="50%" src="./images/moleculas/benzeno.svg" alt="representação do benzeno">
+                <figcaption>Benzeno</figcaption>
+            </figure>
+
+            <div class="element-list">
+                <data class="link-element" value="carbono"></data>
+                <data class="link-element" value="hidrogenio"></data>
+            </div>
             </p>
         </div>
     </div>
@@ -496,29 +359,31 @@
             <p>
             <h2 class="title">Combustão</h2>
 
-            A reação de combustão é um processo químico exotérmico em que um combustível reage com um comburente
-            (geralmente oxigênio - O₂), liberando energia na forma de calor e luz. Essa reação produz principalmente
-            dióxido de carbono (CO₂) e água (H₂O) quando o combustível é um hidrocarboneto completo.
+            <p class="description">
+                A reação de combustão é um processo químico exotérmico em que um combustível reage com um comburente
+                (geralmente oxigênio - O₂), liberando energia na forma de calor e luz. Essa reação produz principalmente
+                dióxido de carbono (CO₂) e água (H₂O) quando o combustível é um hidrocarboneto completo.
+            </p>
 
-            <h3>Exemplo: Combustão do Metano</h3>
+            <h3 class="subtitle">Combustão do Metano</h3>
             <form class="note">
 
                 <div class="column">
-                    <input type="text" id="input-metano">
+                    <input type="text" id="input-metano" placeholder="CH₄">
                     <img class="molecula-img" src="./images/moleculas/metano.svg" alt="metano" />
                 </div>
 
                 <img class="icon" src="./images/symbols/plus.svg" alt="sinal de soma" />
 
                 <div class="column">
-                    <input type="text" id="input-gas-oxigenio" readonly>
+                    <input type="text" id="input-gas-oxigenio" placeholder="O₂" readonly>
                     <img class="molecula-img" src="./images/moleculas/gas_oxigenio.svg" alt="gás oxigênio" />
                 </div>
 
                 <img class="icon" src="./images/symbols/equal.svg" alt="sinal de igual" />
 
                 <div class="column">
-                    <input type="text" id="input-dioxido-de-carbono" readonly>
+                    <input type="text" id="input-dioxido-de-carbono" placeholder="CO₂" readonly>
                     <img class="molecula-img" src="./images/moleculas/dioxido_de_carbono.svg"
                         alt="dióxido de carbono" />
                 </div>
@@ -526,7 +391,7 @@
                 <img class="icon" src="./images/symbols/plus.svg" alt="sinal de soma" />
 
                 <div class="column">
-                    <input type="text" id="input-agua" readonly>
+                    <input type="text" id="input-agua" placeholder="H₂O" readonly>
                     <img class="molecula-img" src="./images/moleculas/agua.svg" alt="água" />
                 </div>
             </form>
@@ -534,36 +399,42 @@
         </div>
 
         <div class="paper" id="paper-acido-base">
-                        <p>
+            <p>
             <h2 class="title">Neutralização de Ácido/Base</h2>
 
-            <h3>Exemplo: Neutralização do Ácido Sulfúrico e Soda Caústica</h3>
-            <form class="note">
+            <p class="description">
+                A neutralização é um processo químico em que um ácido reage com uma base, produzindo sal e água.
+                <br />
+                Essa reação ocorre quando o número de átomos de hidrogênio (H+) do ácido é igual ao número de átomos de
+                hidróxido (OH-) da base.
+            </p>
 
+            <h3 class="subtitle">Neutralização do<br />Ácido Sulfúrico e Soda Caústica</h3>
+
+            <form class="note">
                 <div class="column">
-                    <input type="text" id="input-soda-caustica">
+                    <input type="text" id="input-soda-caustica" placeholder="NaOH">
                     <img class="molecula-img" src="./images/moleculas/soda_caustica.svg" alt="soda caústica" />
                 </div>
 
                 <img class="icon" src="./images/symbols/plus.svg" alt="sinal de soma" />
 
                 <div class="column">
-                    <input type="text" id="input-acido-sulfurico" readonly>
+                    <input type="text" id="input-acido-sulfurico" placeholder="H₂SO₄" readonly>
                     <img class="molecula-img" src="./images/moleculas/acido_sulfurico.svg" alt="ácido sulfuríco" />
                 </div>
 
                 <img class="icon" src="./images/symbols/equal.svg" alt="sinal de igual" />
 
                 <div class="column">
-                    <input type="text" id="input-agua2" readonly>
-                    <img class="molecula-img" src="./images/moleculas/agua.svg"
-                        alt="água" />
+                    <input type="text" id="input-agua2" placeholder="H₂O" readonly>
+                    <img class="molecula-img" src="./images/moleculas/agua.svg" alt="água" />
                 </div>
 
                 <img class="icon" src="./images/symbols/plus.svg" alt="sinal de soma" />
 
                 <div class="column">
-                    <input type="text" id="input-sulfato-de-sodio" readonly>
+                    <input type="text" id="input-sulfato-de-sodio" placeholder="Na₂SO₄" readonly>
                     <img class="molecula-img" src="./images/moleculas/sulfato_de_sodio.svg" alt="sulfato de sódio" />
                 </div>
             </form>
