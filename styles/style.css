@@ -36,6 +36,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
+    padding-bottom: 0;
     background-image: linear-gradient(rgb(53,53,53), rgb(43, 34, 34));
     z-index: 10;
 }
@@ -111,7 +112,7 @@ input {
     header {
         flex-direction: row;
         justify-content: space-between;
-        padding: 0 20px;
+        /* padding: 0 20px; */
     }
 
     header h1 {
@@ -123,15 +124,7 @@ input {
     nav a {
         min-width: 140px;
         height: 100%;
-        padding: 10px 4px;
-    }
-
-    .folder {
-        max-width: 1200px;
-    }
-
-    .folder-front {
-        height: 300px;
+        /* padding: 10px 0px; */
     }
 
     .float-left {
