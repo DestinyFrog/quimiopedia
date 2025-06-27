@@ -58,7 +58,7 @@
     position: relative;
     min-height: var(--paper-height);
 
-    animation-name: close-paper;
+    animation-name: open-paper;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
